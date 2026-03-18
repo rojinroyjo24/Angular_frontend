@@ -1,0 +1,102 @@
+
+<h2>Switch</h2>
+
+
+@switch(day)
+{
+    @case('1'){
+        <p>Monday</p>
+    }
+
+    @case('2'){
+        <p>Tuesday</p>
+    }
+
+    @case('3'){
+        <p>Wednesday</p>
+    }
+
+    @case('4'){
+        <p>Thursday</p>
+    }
+
+    @case('5'){
+        <p>Friday</p>
+    }
+
+    @case('6'){
+        <p>Saturday</p>
+    }
+
+    @default{
+        <p>Invalid Day</p>
+    }
+}
+
+<hr><hr>
+
+<h2>Employee details</h2>
+<p>Name: {{ employee.name }}</p>
+<p>Name: {{ employee.dob }}</p>
+<p>Name: {{ employee.salary }}</p>
+
+<hr><hr>
+
+<h3> {{ employee|json }}</h3>
+
+<hr><hr>
+
+<h3> {{ employee.name|uppercase }}</h3>
+
+<hr><hr>
+
+<h3> {{ employee.name|lowercase }}</h3>
+
+<hr><hr>
+
+<h3> {{ employee.salary|currency }}</h3>
+
+
+
+<hr><hr>
+
+<h3> {{ employee.salary|currency:'INR' }}</h3>
+
+
+<hr><hr>
+
+<h3> {{ employee.salary|currency:'INR':'code' }}</h3>
+
+
+
+<hr><hr>
+
+<h3> {{ employee.dob }}</h3>
+
+<hr><hr>
+
+<h3> {{ employee.dob |date }}</h3>
+
+<hr><hr>
+
+<h3> {{ employee.dob |date:'dd-MM-yyyy' }}</h3>
+
+<hr><hr>
+<!-- chaining ipipe -->
+<h3> {{ employee.dob |date:'MMM'|uppercase }}</h3>  
+
+<!-- custom pipe -->
+ <hr><hr>
+ 
+<h3> {{  employee.name | samplepipe:"Rojin" }}</h3>  
+
+
+
+
+
+
+
+
+
+
+<hr>

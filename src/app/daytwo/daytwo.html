@@ -1,0 +1,28 @@
+<p>daytwo works!</p>
+
+<hr><hr>
+
+<h2>Inter Polation</h2>
+
+<h1>{{msg}}</h1>
+
+<hr><hr>
+
+<h3>Property Binding</h3>
+
+<input type="text" [value]="msg"> <br>
+
+<input type="button" [value]="msg"> <br>
+
+<input [type]="type" [value]="msg">
+
+<hr>
+
+
+<h3>Event Bidning</h3>
+
+<input type="text" #fname>
+
+<button (click)="display(fname.value)">Click</button>
+
+

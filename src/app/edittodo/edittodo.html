@@ -1,0 +1,13 @@
+<h2>Edit Todo</h2>
+
+<form #todoform="ngForm" (ngSubmit)="updateTodo()">
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title" [(ngModel)]="mydata.title" required> <br>
+
+    <label for="completed">completed</label>
+    <input type="checkbox" name="completed" id="completed" [(ngModel)]="mydata.completed" required> <br>
+
+    <input type="submit" value="SUBMIT">
+    
+
+</form>

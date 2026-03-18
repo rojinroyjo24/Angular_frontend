@@ -1,0 +1,23 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2"
+       xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US"
+        target-language="hi"
+        datatype="plaintext"
+        original="ng2.template">
+    <body>
+
+      <trans-unit id="saveBtn">
+        <source>Save</source>
+        <target>सहेजें</target>
+      </trans-unit>
+
+      <trans-unit id="welcomeText">
+        <source>Welcome to my Angular App</source>
+        <target>मेरे Angular ऐप में आपका स्वागत है</target>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>
