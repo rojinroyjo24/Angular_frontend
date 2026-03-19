@@ -8,7 +8,8 @@ export class MediatorApi {
 
   constructor(private http:HttpClient){}
 
-  apiUrl:string="http://127.0.0.1:8000/todo/";
+  //apiUrl:string="http://127.0.0.1:8000/todo/";
+  apiUrl:string="https://rojinroy24.pythonanywhere.com/todo/";
 
   savetodo(data:any){
     return this.http.post(this.apiUrl, data);
